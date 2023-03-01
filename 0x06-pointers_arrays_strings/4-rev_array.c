@@ -9,13 +9,15 @@
  *         If str1 == str2, 0.                                                                                                       
  *         If str1 > str2, the positive difference of the first unmatched char                                                       
  */  
-int _strcmp(char *s1, char *s2)
+int reverse_array(char *a, int n)
 {
-	while (*s1 && *s2 && *s1 == *s2)
-	{
-		s1++;
-		s2++;
-	}
+	int num1, num2;
 
-	return (*s1 - *s2);
+	for (num1 = 0; num1 < n--; num++)
+	{
+		num2 = a[num];
+		a[num] = a[n];
+		a[n] = num2;
+	}
 }
+
