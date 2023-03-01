@@ -7,9 +7,9 @@
  * Return:	void
  */
 
-void reverse_array(char *a, int n)
+void reverse_array(int *a, int n)
 {
-	int num1, num2;
+	int num, num2;
 
 	for (num1 = 0; num1 < n--; num++)
 	{
