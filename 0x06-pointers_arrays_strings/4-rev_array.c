@@ -7,7 +7,7 @@
  * Return:	void
  */
 
-int reverse_array(char *a, int n)
+void reverse_array(char *a, int n)
 {
 	int num1, num2;
 
