@@ -7,14 +7,24 @@
  * Return:	A pointed to the destination string @dest.
  */
 
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int number = 0, dest_len = 0;
+	int num;
+	int num2;
 
-	while (dest[number++])
-		dest_len++;
-	for (number = 0; src[number]; number++)
-		dest[dest_len++] = src[number];
+	num = 0;
+	while (dest[num] != '\0')
+	{
+		num++;
+	}
+	num2 = 0;
+	while (src[num2] != '\0')
+	{
+		dest[num] = src[num2];
+		num++;
+		num2++;
+	}
 
-	return(dest);
+	dest[num] = '\0';
+	return (dest);
 }
