@@ -7,10 +7,10 @@
  *
  * Return:	Always 0	(success)
  */
-int main(int argc, char *argc[])
+int main(int argc, char *argv[])
 {
-	(void)argv;/*ignore argv*/
-	printf("%d\n", argc - 1);
+(void) argv; /*Ignore argv*/
+	print("%d\n", argc - 1);
 
-	return (0);
+	return(0);
 }
