@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 
 		s1 = "";
 	if (s2 == NULL)
-		s2 = ";
+		s2 = "";
 
 	i = ci = 0;
 
@@ -45,7 +45,7 @@ char *str_concat(char *s1, char *s2)
 		i++, ci++;
 	}
 
-	conc[i] = '\0';
+	conct[i] = '\0';
 
 	return (conct);
 }
